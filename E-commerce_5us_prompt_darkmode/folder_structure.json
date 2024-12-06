@@ -1,0 +1,51 @@
+{
+    "src": {
+        "app": {
+            "app.module.ts": {},
+            "app.component.ts": {},
+            "app.component.html": {},
+            "app.component.css": {},
+            "components": {
+                "header": {
+                    "header.component.ts": {},
+                    "header.component.html": {},
+                    "header.component.css": {}
+                },
+                "cart": {
+                    "cart.component.ts": {},
+                    "cart.component.html": {},
+                    "cart.component.css": {}
+                },
+                "products": {
+                    "products.component.ts": {},
+                    "products.component.html": {},
+                    "products.component.css": {}
+                },
+                "product-item": {
+                    "product-item.component.ts": {},
+                    "product-item.component.html": {},
+                    "product-item.component.css": {}
+                },
+                "checkout": {
+                    "checkout.component.ts": {},
+                    "checkout.component.html": {},
+                    "checkout.component.css": {}
+                }
+            },
+            "services": {
+                "cart.service.ts": {},
+                "products.service.ts": {}
+            },
+            "models": {
+                "product.model.ts": {},
+                "cart-item.model.ts": {}
+            },
+            "directives": {
+                "dark-mode.directive.ts": {}
+            },
+            "pipes": {
+                "discount.pipe.ts": {}
+            }
+        }
+    }
+}

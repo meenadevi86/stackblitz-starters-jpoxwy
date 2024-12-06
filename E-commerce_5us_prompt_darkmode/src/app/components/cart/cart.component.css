@@ -1,0 +1,84 @@
+/* Styles for cart component */
+
+.cart {
+  /* Base styles */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.cart__table {
+  width: 100%;
+  border-collapse: collapse;  
+}
+
+.cart__table th,
+.cart__table td {
+  padding: 12px; 
+  text-align: left;
+}
+
+.cart__item-name {
+  font-weight: bold;
+}
+
+.cart__item-qty {
+  width: 80px;  
+}
+
+.cart__total {
+  font-weight: bold;
+  text-align: right; 
+}
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  
+  .cart {
+    background-color: #1d1d1d;
+    color: #eee;
+  }
+  
+  .cart__table th,
+  .cart__table td { 
+    border-bottom: 1px solid #444;
+  }
+  
+  .cart__total {
+    color: #fff;
+  }
+  
+}
+
+/* Styles for discount input */
+.cart__discount {
+  width: 200px;
+  padding: 6px 12px;
+  margin-bottom: 10px;  
+}
+
+/* Styles for checkout button */
+.cart__checkout-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cart__checkout-btn:hover {
+  background-color: #0062cc;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .cart__checkout-btn {
+    background-color: #0d6efd;
+  }
+  
+  .cart__checkout-btn:hover {
+    background-color: #025ce2;
+  }
+  
+}

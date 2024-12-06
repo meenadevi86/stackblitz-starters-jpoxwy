@@ -1,0 +1,8 @@
+{
+    "Shopping Cart": [
+        "src/app/components/cart/cart.component.ts",
+        "src/app/components/cart/cart.component.css",
+        "src/app/services/cart.service.ts",
+        "src/app/models/cart-item.model.ts"
+    ]
+}

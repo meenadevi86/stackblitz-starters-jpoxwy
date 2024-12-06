@@ -1,0 +1,51 @@
+<!-- Checkout page -->
+<div appDarkMode>
+
+  <!-- Order summary -->
+  <div>
+    <h2>Order Summary</h2>
+
+    <!-- Bind order details -->
+    <p>Total: {{cart.totalPrice}}</p>
+    
+    <p>Items: 
+      <span *ngFor="let item of cart.items">
+        {{item.name}} x {{item.quantity}}
+      </span>
+    </p>
+
+  </div>
+
+  <!-- Checkout form -->
+  <form (ngSubmit)="submitOrder()">
+
+    <!-- User details form groups -->
+    <div>
+      <label>Name</label>
+      <input name="name" [(ngModel)]="user.name">
+    </div>
+
+    <div>
+      <label>Email</label>
+      <input type="email" name="email" [(ngModel)]="user.email">  
+    </div>
+
+    <!-- Payment details -->
+    <h3>Payment</h3>
+
+    <div>
+      <input type="radio" name="paymentMethod" value="credit">
+      <label>Credit Card</label>
+    </div>
+
+    <div>
+      <input type="radio" name="paymentMethod" value="paypal">
+      <label>Paypal</label> 
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit">Place Order</button>
+
+  </form>
+
+</div>
